@@ -1,0 +1,10 @@
+[package]
+name = "woah"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rand = "0.8"
+argon2 = "0.5"
+aes-gcm = "0.11"
+rpassword = "7.5"
