@@ -107,9 +107,6 @@ fn edit() -> FnResult<()>{
 
     let fname = fname.trim();
     let filepath = Path::new(&fname);
-    if !filepath.exists() {
-        return Err("File not found".into());
-    }
     let pass = rpassword::prompt_password("Enter your password: ")?;
     let pass = pass.trim();
     let destpath = Path::new("/tmp/to_edit.txt");
